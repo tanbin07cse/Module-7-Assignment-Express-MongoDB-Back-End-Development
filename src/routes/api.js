@@ -7,10 +7,6 @@ const messageController = require('../controllers/messageController.js');
 const portfolioController = require('../controllers/portfolioController.js');
 const productController = require('../controllers/productController.js');
 
-router.get('/undefined', (req,res)=>{
-    res.status("404").end("undefined");
-});
-
 
 router.get('/create',DemoController.create);
 router.get('/update',DemoController.update);
